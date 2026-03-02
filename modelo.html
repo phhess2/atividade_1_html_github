@@ -11,22 +11,87 @@
     }
 
     body{
-      margin: 0;
-      color: aliceblue;
+      margin: 5;
+      color: rgb(255, 255, 255);
       background-color: black;
       font-family: system-ui, Arial, sans-serif;
       line-height: 1.5;
       
+      .container{
+        width: 900px;
+        margin : 0 auto;
+        padding : 16px;
+      }
+
+      .box{
+        background: rgba(0,0,0,0.75);
+        border: 1px solid rgba(240,240,255,0.30);
+        border-radius: 20px;
+        padding: 14px;
+        margin-bottom: 12px;
+      }
+    }
+
+    h1, h2 {
+      color: rgb(255,221,0);
+      margin: 0 0 8px;
 
     }
+
+    .header-interno p {
+      margin: 0;
+      color: whitesmoke
+
+    }
+
+    p {
+      color: whitesmoke
+    }
+
+    #apresentacao {
+      border-left: 8px solid rgb(255,221,0);
+    }
+
+    batsinal{
+      position: 0 0;
+
+    }
+
+    .nav{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      flex-weap: nowrap;
+    }
+
+    .nav-link{
+      color: black;
+      display: inline-block;
+      text-decoration: none;
+      background: rgb(255,221,0);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-weight:700;
+
+    }
+    
+
   </style>
   
   </head>
-  
+   
 
   <body id = "topo">
 
-    <div class+"container" id = "pagina">
+    <header>
+      <div class="batsinal">
+        <img src="batsinal.png" alt="batsnial">
+      </div>
+    </header>
+
+    <div class="container" id = "pagina">
       <header class="box" id = "cabecalho">
         <div class="header-interno">
           <h1 class="titulo">Site Do Batman</h1>
@@ -45,8 +110,8 @@
         </div>
       </nav>
       <main id = "conteúdo">
-        <div class="row" id="linha-1">
-          <section class="box-panel" id = "apresentacao">
+       
+          <section class="box" id = "apresentacao">
             <h2>Quem é o Batman?</h2>
             <p>
               Batman(Bruce Wayne) é um personagens da DC Comics que atua como justiceiro de Gotham.<br> Ele não tem superpoderes, sua força esta em <strong>treinamento</strong>,
@@ -59,7 +124,7 @@
             </p>
             
           </section>
-        </div>
+       
         <section class="box" id ="galeria">
           <h2>Galeria</h2>
           <div class = "galeria" id="galeria-imagens">
